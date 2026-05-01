@@ -1,5 +1,12 @@
 # CMMC Level 2 / NIST 800-171 PowerShell Evidence Collection
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PowerShell](https://img.shields.io/badge/PowerShell-5.1%2B-blue?logo=powershell)](https://github.com/PowerShell/PowerShell)
+[![CMMC Level 2](https://img.shields.io/badge/CMMC-Level%202-navy)](https://dodcio.defense.gov/CMMC/)
+[![NIST 800-171](https://img.shields.io/badge/NIST-800--171%20Rev%202-navy)](https://csrc.nist.gov/publications/detail/sp/800-171/rev-2/final)
+
+> Maintained by [Init Cyber, LLC](https://initcyber.com) — CMMC consulting for the Defense Industrial Base.
+
 A collection of PowerShell scripts for technically validating and collecting evidence against NIST SP 800-171 Rev 2 controls required for CMMC Level 2 certification. Each script targets a specific control, outputs timestamped CSV artifacts, and includes pass/fail logic where technically deterministic.
 
 > **Use at your own risk.** These scripts are provided as-is for informational and evidence-collection purposes. They are not a substitute for a formal CMMC assessment, C3PAO review, or credentialed vulnerability scan. Results should be reviewed by a qualified assessor in context. See [Disclaimer](#disclaimer) below.
@@ -208,7 +215,7 @@ All scripts include `#Requires -RunAsAdministrator`. Scripts requiring elevation
 The following require organizational artifacts, external tools, or assessor judgment and cannot be technically validated via PowerShell alone:
 
 - **Approved baseline documentation** (CM.3.4.1) — PowerShell can document current state; comparison to an approved baseline requires the baseline document
-- **Credentialed vulnerability scan results** (RA.3.11.2) — output from an approved scanner required (Tenable, Nessus, Rapid7, Microsoft Defender Vulnerability Management, or equivalent)
+- **Credentialed vulnerability scan results** (RA.3.11.2) — output from an approved scanner required (Tenable, Nessus, Rapid7, Microsoft Defender Vulnerability Management, or equivalent). Defender Antivirus alone does not satisfy this requirement.
 - **Incident response plan** (IR.3.6.1/3.6.2) — policy document, not a technical check
 - **System Security Plan** (CA.3.12.4) — organizational artifact
 - **Personnel screening** (PS.3.9.1/3.9.2) — HR process, not technically checkable
@@ -226,7 +233,23 @@ These scripts are provided **as-is** for informational and evidence-support purp
 - **Your environment, your responsibility.** Results depend on your system configuration, OS version, and module availability. Always review output before submitting as evidence.
 - **Not a C3PAO substitute.** A formal CMMC Level 2 assessment must be conducted by an accredited C3PAO. These scripts support preparation and self-assessment only.
 
-Scripts may be freely used, modified, and redistributed. Attribution appreciated but not required.
+Scripts may be freely used, modified, and redistributed under the MIT License. Attribution appreciated but not required.
+
+---
+
+## License
+
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for full terms.
+
+In plain language:
+- ✅ Use freely in commercial and non-commercial environments
+- ✅ Modify and redistribute
+- ✅ Use in client engagements
+- ✅ Fork and build on top of
+- ❌ No warranty — use at your own risk
+- ❌ Init Cyber, LLC is not liable for outcomes from use of these scripts
+
+Copyright (c) 2025 Init Cyber, LLC
 
 ---
 
