@@ -208,7 +208,7 @@ All scripts include `#Requires -RunAsAdministrator`. Scripts requiring elevation
 The following require organizational artifacts, external tools, or assessor judgment and cannot be technically validated via PowerShell alone:
 
 - **Approved baseline documentation** (CM.3.4.1) — PowerShell can document current state; comparison to an approved baseline requires the baseline document
-- **Credentialed vulnerability scan results** (RA.3.11.2) — Tenable / Nessus / Rapid7 output required
+- **Credentialed vulnerability scan results** (RA.3.11.2) — output from an approved scanner required (Tenable, Nessus, Rapid7, Microsoft Defender Vulnerability Management, or equivalent)
 - **Incident response plan** (IR.3.6.1/3.6.2) — policy document, not a technical check
 - **System Security Plan** (CA.3.12.4) — organizational artifact
 - **Personnel screening** (PS.3.9.1/3.9.2) — HR process, not technically checkable
